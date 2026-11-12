@@ -1,0 +1,45 @@
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+*.egg-info/
+build/
+dist/
+
+# Testes e ferramentas
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Configuração local e credenciais
+.env
+.env.*
+!.env.example
+.aws/
+secrets/
+credentials*.json
+
+# Dados locais; apenas amostras sintéticas podem ser versionadas
+/data/*
+!/data/.gitkeep
+!/data/synthetic/
+
+# Bancos e resultados gerados
+*.db
+*.db-*
+*.sqlite
+*.sqlite-*
+*.sqlite3
+*.sqlite3-*
+/outputs/
+*.log
+
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+Desktop.ini
