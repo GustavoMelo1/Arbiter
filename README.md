@@ -1,24 +1,28 @@
 # Arbiter
 
-Projeto em desenvolvimento para comparar modelos de previsão de séries temporais de forma reproduzível. A proposta é avaliar os modelos nas mesmas condições e gerar rankings por horizonte, apoiando a decisão de substituir um modelo por outro.
+A project in development for comparing time series forecasting models reproducibly. It evaluates models under the same conditions and produces rankings by horizon, supporting the decision of whether to replace one model with another.
 
-## Estrutura
+## Structure
 
 ```text
 arbiter/
+├── .github/
+│   └── workflows/
 ├── README.md
+├── pyproject.toml
 ├── requirements.txt
 ├── .gitignore
 ├── src/
-│   ├── ingestion/     # Leitura e carga dos dados
-│   ├── validation/    # Validação e quarentena
-│   ├── features/      # Variáveis para os modelos
-│   ├── models/        # Modelos de previsão
-│   ├── backtest/      # Avaliação em janelas temporais
-│   ├── metrics/       # Métricas de erro
-│   ├── reporting/     # Rankings e relatórios
-│   └── config.py      # Configurações
-├── tests/             # Testes automatizados
-├── docs/              # Documentação
-└── data/              # Dados locais
+│   └── arbiter/
+│       ├── ingestion/
+│       ├── validation/
+│       ├── features/
+│       ├── models/
+│       ├── backtest/
+│       ├── metrics/
+│       ├── reporting/
+│       └── config.py
+├── tests/
+├── docs/
+└── data/
 ```
